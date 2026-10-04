@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rachit Reddy | Personal Profile</title>
+  <meta name="description" content="Personal profile of Talakanti Rachit Reddy, a third-year IT undergraduate at MIT Manipal.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="#home">Rachit Reddy<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#interests">Interests</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Profile photo, name and introduction -->
+    <section class="hero" id="home">
+      <img class="photo" src="images/profile.jpg" alt="Portrait of Rachit Reddy" width="506" height="900">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Talakanti Rachit Reddy</h1>
+        <p class="intro">Third-year IT undergraduate at MIT Manipal building full-stack and applied-ML systems &mdash; from serverless AWS platforms to multi-agent AI pipelines.</p>
+        <p class="links">
+          <a class="button" href="#contact">Get in touch</a>
+          <a class="button outline" href="#projects">See my projects</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm Rachit, a third-year Information Technology student at MIT Manipal. I like taking an idea all the way from a model or a schema to something people can actually click on &mdash; which is how I ended up building a serverless AWS storefront and a multi-agent AI platform in the same year.</p>
+      <p>Right now I'm an AI intern at Trueld, teaching deep-learning and OCR models to read messy Arabic banking documents. I care about systems that stay honest when the data is bad: server-side checks, layered fallbacks, and agents that only reason over cited signals.</p>
+      <p>Away from the keyboard you'll find me in the pool, at the gym or on the basketball court, or helping run competitive events at Revels, our cultural fest.</p>
+    </section>
+
+    <!-- Educational information -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="date">Expected May 2028</p>
+          <h3>B.Tech in Information Technology</h3>
+          <p>Manipal Institute of Technology (MIT), Manipal, Karnataka</p>
+          <p><strong>CGPA: 7.4 / 10.0</strong></p>
+        </article>
+        <article class="card">
+          <p class="date">Class XII (Intermediate)</p>
+          <h3>FIITJEE</h3>
+          <p>Hyderabad, Telangana</p>
+          <p><strong>86.0%</strong></p>
+        </article>
+        <article class="card">
+          <p class="date">Class X</p>
+          <h3>Army Public School (APS)</h3>
+          <p>Secunderabad, Telangana</p>
+          <p><strong>94.8%</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Professional information -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="date">June 2026 &ndash; Present</p>
+          <h3>AI Intern &mdash; Computer Vision &amp; OCR</h3>
+          <p>Trueld, Hyderabad</p>
+          <ul>
+            <li>Developing and fine-tuning deep-learning and OCR models to extract text from unstructured Arabic banking documents &mdash; national IDs, passports and handwritten records.</li>
+            <li>Building image-preprocessing and computer-vision pipelines for low-resolution scans and heavy layout variation, reaching ~90% extraction accuracy.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <p class="date">June 2025 &ndash; August 2025</p>
+          <h3>Application Developer Intern</h3>
+          <p>IDS, Remote</p>
+          <ul>
+            <li>Supported client onboarding and coordination calls while contributing to internal development work.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <p class="date">Extracurricular</p>
+          <h3>Organising Committee Member</h3>
+          <p>Revels (MIT's cultural fest), Manipal</p>
+          <ul>
+            <li>Planned and ran competitive events for 100+ participants &mdash; on-ground logistics, resource allocation, scheduling and live troubleshooting alongside peers and faculty.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3 class="sub">Achievements &amp; certifications</h3>
+      <ul class="plain">
+        <li>2nd place &mdash; DevLynx Hackathon, for innovation and technical execution.</li>
+        <li>DeepLearning.AI (Coursera): Improving Deep Neural Networks.</li>
+        <li>DeepLearning.AI (Coursera): Convolutional Neural Networks.</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Languages</h3>
+          <ul class="tags"><li>C</li><li>C++</li><li>Python</li><li>Java</li><li>SQL</li></ul>
+        </article>
+        <article class="card">
+          <h3>AI &amp; Machine Learning</h3>
+          <ul class="tags"><li>PyTorch</li><li>TensorFlow</li><li>Scikit-Learn</li><li>NumPy</li><li>Pandas</li><li>OpenCV</li></ul>
+        </article>
+        <article class="card">
+          <h3>Web &amp; Backend</h3>
+          <ul class="tags"><li>React</li><li>TypeScript</li><li>Vite</li><li>FastAPI</li><li>Tailwind CSS</li><li>HTML</li><li>CSS</li></ul>
+        </article>
+        <article class="card">
+          <h3>Tools &amp; Cloud</h3>
+          <ul class="tags"><li>Git</li><li>Docker</li><li>AWS</li><li>Google Cloud (basic)</li></ul>
+        </article>
+        <article class="card">
+          <h3>Core CS</h3>
+          <ul class="tags"><li>Data Structures &amp; Algorithms</li><li>OOP</li><li>Operating Systems</li><li>Artificial Intelligence</li><li>DBMS</li></ul>
+        </article>
+        <article class="card">
+          <h3>Problem Solving</h3>
+          <ul class="tags"><li>LeetCode</li><li>Hackathons</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="cards two">
+        <article class="card">
+          <p class="date">Serverless e-commerce platform</p>
+          <h3>Shopverse</h3>
+          <ul>
+            <li>Fully serverless, Amazon-style storefront on AWS with a single-table DynamoDB design (GSI for category and price-range queries).</li>
+            <li>Secure Razorpay flow: the backend recomputes cart totals and verifies the HMAC signature server-side, so amounts can't be tampered with.</li>
+            <li>Infrastructure as code with AWS CDK; FastAPI containerized on Lambda behind API Gateway, deployed in one command.</li>
+          </ul>
+          <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>FastAPI</li><li>DynamoDB</li><li>AWS Lambda</li><li>Cognito</li><li>CDK</li><li>Docker</li></ul>
+          <p><a href="https://github.com/Rachit64/shopverse" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
+        </article>
+        <article class="card">
+          <p class="date">Agentic AI for energy supply-chain resilience</p>
+          <h3>Sentinel</h3>
+          <ul>
+            <li>Multi-agent platform that monitors live geopolitical, shipping and market signals to model oil-supply disruptions for India and generate crude-procurement rerouting plans.</li>
+            <li>Specialised agents (risk intelligence, signal extraction, scenario, procurement) plus a Gemini &ldquo;sanity-gate&rdquo; that reviews and overrides implausible outputs.</li>
+            <li>Live, evidence-grounded pipeline (AIS, GDELT, market and FX feeds) with per-source health monitoring and layered fallbacks, so it degrades gracefully instead of fabricating data.</li>
+          </ul>
+          <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Gemini 2.5 (Vertex AI)</li><li>MapLibre</li><li>deck.gl</li><li>Server-Sent Events</li></ul>
+          <p><a href="https://github.com/Rachit64" target="_blank" rel="noopener">More on GitHub &rarr;</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Interests / hobbies -->
+    <section id="interests">
+      <h2>Interests</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>🏊 Swimming</h3>
+          <p>Lap after lap, the water is where my head clears. Steady breathing, steady rhythm.</p>
+        </article>
+        <article class="card">
+          <h3>🏋️ Going to the gym</h3>
+          <p>Show up, add a little, repeat. Small reps, done consistently.</p>
+        </article>
+        <article class="card">
+          <h3>🏀 Basketball</h3>
+          <p>Fast, loud and a great way to switch off after a long day of coding.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact details and social links -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Got an idea, an opportunity, or just want to say hi? My inbox is open.</p>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <a href="mailto:rachitreddy64@gmail.com">rachitreddy64@gmail.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rachit-reddy" target="_blank" rel="noopener">linkedin.com/in/rachit-reddy</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/Rachit64" target="_blank" rel="noopener">github.com/Rachit64</a></li>
+        <li><strong>Based in:</strong> Manipal, Karnataka, India</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Rachit Reddy</p>
+    <a href="#home">Back to top &uarr;</a>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu: show / hide the links
+    var menuBtn = document.getElementById('menuBtn');
+    var nav = document.getElementById('nav');
+    menuBtn.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open);
+    });
+    nav.addEventListener('click', function () {
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  </script>
+</body>
+</html>

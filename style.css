@@ -1,0 +1,192 @@
+/* Rachit Reddy — personal profile
+   Simple, responsive layout. Colours borrowed from animejs.com. */
+
+:root {
+  --bg: #252423;
+  --card: #2f2d2b;
+  --line: #413e3b;
+  --text: #f6f4f2;
+  --muted: #b9b6b2;
+  --accent: #ff4b4b;
+  --accent-2: #ffa828;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+img { max-width: 100%; display: block; }
+a { color: var(--accent-2); }
+a:hover { color: var(--accent); }
+h1, h2, h3, p, ul { margin-top: 0; }
+
+/* ---------- header ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding: 14px 6vw;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.logo {
+  color: var(--text);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.logo span { color: var(--accent); }
+
+.nav { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+.nav a:hover { color: var(--text); }
+
+.menu-btn {
+  display: none;
+  padding: 6px 14px;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+/* ---------- layout ---------- */
+main { max-width: 1000px; margin: 0 auto; padding: 0 6vw; }
+
+section { padding: 56px 0 8px; }
+
+h2 {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-bottom: 6px;
+  border-bottom: 3px solid var(--accent);
+  font-size: 2rem;
+}
+
+h3 { margin-bottom: 6px; font-size: 1.2rem; }
+h3.sub { margin-top: 32px; }
+
+/* ---------- hero ---------- */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px 48px;
+  padding-top: 48px;
+}
+
+.photo {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  object-position: 50% 28%;
+  border: 4px solid var(--accent);
+  border-radius: 50%;
+}
+
+.hero-text { flex: 1 1 320px; }
+.eyebrow { margin-bottom: 4px; color: var(--accent-2); font-weight: 700; }
+h1 { margin-bottom: 12px; font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.1; }
+.intro { max-width: 36em; color: var(--muted); font-size: 1.15rem; }
+
+.links { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 0; }
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--accent);
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.button:hover { background: #e03a3a; border-color: #e03a3a; color: #fff; }
+.button.outline { background: none; color: var(--text); border-color: var(--line); }
+.button.outline:hover { background: var(--card); color: var(--text); }
+
+/* ---------- cards ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+.cards.two { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
+.card {
+  padding: 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent-2);
+  border-radius: 8px;
+}
+.card p:last-child, .card ul:last-child { margin-bottom: 0; }
+.card ul { padding-left: 1.2em; }
+.card li { margin-bottom: 8px; color: var(--muted); }
+
+.date {
+  margin-bottom: 4px;
+  color: var(--accent-2);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* skill / tech tags */
+ul.tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
+ul.tags li {
+  margin: 0;
+  padding: 3px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  font-size: 0.85rem;
+}
+
+ul.plain { padding-left: 1.2em; color: var(--muted); }
+.contact-list { padding: 0; list-style: none; }
+.contact-list li { margin-bottom: 8px; }
+
+/* ---------- footer ---------- */
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  max-width: 1000px;
+  margin: 56px auto 0;
+  padding: 24px 6vw;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.site-footer p { margin: 0; }
+
+/* ---------- small screens ---------- */
+@media (max-width: 700px) {
+  .menu-btn { display: block; }
+  .nav { display: none; flex-basis: 100%; flex-direction: column; gap: 8px; padding: 8px 0; }
+  .nav.open { display: flex; }
+  .hero { justify-content: center; text-align: center; }
+  .hero-text { flex-basis: 100%; }
+  .links { justify-content: center; }
+  .intro { margin-left: auto; margin-right: auto; }
+}
