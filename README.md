@@ -14,7 +14,7 @@ Skills, Projects, Interests (swimming, gym, basketball) and Contact / social lin
 | --- | --- |
 | `index.html` | Page structure and content |
 | `style.css` | Colours, fonts, spacing, layout and responsive rules |
-| `images/profile.jpg` | Profile photograph |
+| `images/photo.jpg` | Profile photograph |
 | `images/favicon.svg` | Browser tab icon |
 
 Hosted with GitHub Pages (branch `main`, root folder).
